@@ -1,0 +1,16 @@
+@import "../base/_colors.sass";
+
+.label
+	color: $default_color;
+	display: block;
+	font-weight: bold;
+
+.label--required
+
+	&:after
+		color: red
+		content: '*'
+		font-size: 0.8rem
+		padding-left: 3px
+		position: relative
+		top: -0.25em

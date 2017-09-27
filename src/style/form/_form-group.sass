@@ -1,0 +1,22 @@
+@mixin form-group()
+	padding: 5px 10px
+	box-sizing: border-box
+
+.input-group
+	@include form-group() 
+
+	> .label
+		margin-bottom: 5px
+
+.button-group
+	@include form-group()
+	text-align: right
+
+	.button
+		margin: 0 5px
+
+		&:first-child
+			margin-left: 0
+
+		&:last-child
+			margin-right: 0

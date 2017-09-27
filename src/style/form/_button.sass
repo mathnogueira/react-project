@@ -1,0 +1,19 @@
+@import "../base/_colors.sass";
+@import "../mixins/round-border.sass";
+
+.button
+	padding: 8px 15px
+	background: transparent
+	border: solid 1px #555
+
+	@include round-border(5px)
+
+.button--primary
+	background: $button-primary-bgcolor
+	color: $button-primary-color
+	border-color: $button-primary-border-color
+
+.button--secondary
+	background: $button-secondary-bgcolor
+	color: $button-secondary-color
+	border-color: $button-secondary-border-color
